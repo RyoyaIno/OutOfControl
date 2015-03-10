@@ -5,7 +5,7 @@ EclipseではWindowsのみデバッグ可能(Mac不可)<br>
 <br>
 [注意事項]<br>
 ブラウザに組み込んで使うことを前提としているのでJavaScriptとの非同期通信のLiveConnectを使用している。<br>
-そのままeclipseなどでデバッグするときは、LiveConnect部分をコメントアウトし、実行構成のパラメーターを適切に送る。<.br
+そのままeclipseなどでデバッグするときは、LiveConnect部分をコメントアウトし、実行構成のパラメーターを適切に送る。<br>
 例:<br>
   best_time:100000<br>
   clear_times:10<br>
