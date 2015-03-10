@@ -603,23 +603,13 @@ class MainPanel extends JPanel implements KeyListener, Runnable, Common {
 	 */
 	public void keyPressed(KeyEvent e) {
 		int keyCode = e.getKeyCode();
-		if (keyCode == KeyEvent.VK_LEFT) {
-			if (false) {
-				menuLeftKey.press();
-				waveEngine.play("pi");
-			} else {
-				leftKey.press();
-			}
+		if (keyCode == KeyEvent.VK_LEFT || keyCode == KeyEvent.VK_J) {
+			leftKey.press();
 		}
-		if (keyCode == KeyEvent.VK_RIGHT) {
-			if (false) {
-				menuRightKey.press();
-				waveEngine.play("pi");
-			} else {
-				rightKey.press();
-			}
+		if (keyCode == KeyEvent.VK_RIGHT || keyCode == KeyEvent.VK_L) {
+			rightKey.press();
 		}
-		if (keyCode == KeyEvent.VK_UP) {
+		if (keyCode == KeyEvent.VK_UP || keyCode == KeyEvent.VK_I) {
 			if (title.isVisible()) {
 				menuUpKey.press();
 				waveEngine.play("pi");
@@ -627,7 +617,7 @@ class MainPanel extends JPanel implements KeyListener, Runnable, Common {
 				upKey.press();
 			}
 		}
-		if (keyCode == KeyEvent.VK_DOWN) {
+		if (keyCode == KeyEvent.VK_DOWN || keyCode == KeyEvent.VK_K) {
 			if (title.isVisible()) {
 				menuDownKey.press();
 				waveEngine.play("pi");
@@ -650,19 +640,19 @@ class MainPanel extends JPanel implements KeyListener, Runnable, Common {
 	 */
 	public void keyReleased(KeyEvent e) {
 		int keyCode = e.getKeyCode();
-		if (keyCode == KeyEvent.VK_LEFT) {
+		if (keyCode == KeyEvent.VK_LEFT || keyCode == KeyEvent.VK_J) {
 			leftKey.release();
 			menuLeftKey.release();
 		}
-		if (keyCode == KeyEvent.VK_RIGHT) {
+		if (keyCode == KeyEvent.VK_RIGHT || keyCode == KeyEvent.VK_L) {
 			rightKey.release();
 			menuRightKey.release();
 		}
-		if (keyCode == KeyEvent.VK_UP) {
+		if (keyCode == KeyEvent.VK_UP || keyCode == KeyEvent.VK_I) {
 			upKey.release();
 			menuUpKey.release();
 		}
-		if (keyCode == KeyEvent.VK_DOWN) {
+		if (keyCode == KeyEvent.VK_DOWN || keyCode == KeyEvent.VK_K) {
 			downKey.release();
 			menuDownKey.release();
 		}

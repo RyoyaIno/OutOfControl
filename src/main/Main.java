@@ -25,7 +25,7 @@ public class Main extends JApplet{
 	 */
 	public void init() {
 		//javascript連携オブジェクト生成
-		//win = (JSObject) JSObject.getWindow(this);
+		win = (JSObject) JSObject.getWindow(this);
 		//htmlのparamから値の取得
 		this.load();
 		// パネルを作成
